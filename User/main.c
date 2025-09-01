@@ -2,7 +2,7 @@
   ******************************************************************************
   *
   * @file    main.c
-  * @author  GarMing
+  * @author  
   * @brief   Template Project
   *
   ******************************************************************************
@@ -16,7 +16,7 @@
 /*********************
  *      INCLUDES
  *********************/
-
+#include "main.h"
 /*********************
  *      DEFINES
  *********************/
@@ -29,7 +29,6 @@
  *  STATIC PROTOTYPES
  **********************/
 static void Init(void);
-static void Config(void);
 static void Loop(void);
 /**********************
  *  STATIC VARIABLES
@@ -49,9 +48,8 @@ static void Loop(void);
   * @retval 0 Exit status of the program
   */
 int main(void)
-{	
+{
     Init();
-    Config();
     Loop();
     
     return 0;
@@ -70,18 +68,6 @@ static void Init(void)
 {
 
 }
-
-/**
-  * @brief  All settings.
-  * @param  None
-  * @retval NULL
-  */
-static void Config(void)
-{
-
-}
-
-
 
 /**
   * @brief  Program loop.

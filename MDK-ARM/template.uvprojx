@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F429_439xx,</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Libraries\CMSIS\Device\ST\STM32F4xx\Include;..\Libraries\CMSIS\Include;..\Libraries\STM32F4xx_StdPeriph_Driver\inc;..\User\Basic;..\User\Core</IncludePath>
+              <IncludePath>..\Libraries\CMSIS\Device\ST\STM32F4xx\Include;..\Libraries\CMSIS\Include;..\Libraries\STM32F4xx_StdPeriph_Driver\inc;..\User</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -382,22 +382,27 @@
       </TargetOption>
       <Groups>
         <Group>
-          <GroupName>Basic</GroupName>
+          <GroupName>User</GroupName>
           <Files>
             <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\User\Basic\main.c</FilePath>
+              <FilePath>..\User\main.c</FilePath>
             </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Core</GroupName>
-          <Files>
+            <File>
+              <FileName>templ.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\templ.c</FilePath>
+            </File>
+            <File>
+              <FileName>templ.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\templ.h</FilePath>
+            </File>
             <File>
               <FileName>stm32f4xx_it.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\User\Core\stm32f4xx_it.c</FilePath>
+              <FilePath>..\User\stm32f4xx_it.c</FilePath>
             </File>
           </Files>
         </Group>
